@@ -151,8 +151,7 @@ section .box {
           flex-direction: column;
   height: 70vh;
   background-color: white;
-  border-top-left-radius: 15rem;
-  border-bottom-left-radius: 15rem;
+  border-radius: 15rem;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;

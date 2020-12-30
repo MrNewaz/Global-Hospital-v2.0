@@ -231,6 +231,10 @@ section .form-field {
   border: none;
 }
 
+section .form-field:focus {
+  border: 2px solid #7e08ec;
+}
+
 section .submit-btn {
   color: white;
   width: 85%;
