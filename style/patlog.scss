@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: linear-gradient(-45deg, #6408bc, #23a6d5);
+  background: linear-gradient(-45deg, #23a6d5, #6408bc, #23a6d5);
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
   a {
@@ -81,8 +81,9 @@ section {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-in-out;
+
   .rocket {
-    flex: 1 1 40rem;
+    flex: 1 1 60rem;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -90,144 +91,109 @@ section {
     align-items: center;
     color: white;
   }
-  .box {
+  .side-box {
+    position: relative;
+    flex: 3 1 60rem;
+    background: rgb(237, 240, 241);
+    height: 60vh;
+    border-top-left-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+    overflow: hidden;
+  }
+  .button-box {
     display: flex;
-    flex-direction: column;
-    height: 70vh;
-    background-color: white;
-    border-top-left-radius: 15rem;
-    border-bottom-left-radius: 15rem;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 40%;
+    margin: 2% 2% 2% auto;
     align-items: center;
-    flex: 2.5 1 40rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    h4 {
-      font-weight: bold;
-      font-size: 4rem;
-      color: #6408bc;
-    }
-    .top-bar {
-      display: flex;
-      align-self: flex-end;
-      text-align: center;
-      justify-content: space-evenly;
-      align-items: center;
-      border-radius: 4rem;
-      padding: 2rem 3rem;
-      margin: 2rem;
-
+    position: relative;
+    background: #e8e8e8;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3rem;
+    text-align: center;
+    .pato {
+      color: white;
       background: #6408bc;
-      color: white;
-      transition: all 0.5s ease-in-out;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-      &:hover {
-        background: #23a6d5;
-        #recep {
-          color: #23a6d5;
-        }
-      }
     }
-    div {
-      align-self: center;
-      text-align: center;
-    }
-    a {
-      font-weight: bold;
-      text-align: center;
-      font-size: 2rem;
-      color: white;
-      padding: 0rem 2rem;
-    }
-    #recep {
-      transition: all 0.3s ease-in-out;
-      padding: 1.3rem 3rem;
-      border-radius: 3rem;
-      color: #6408bc;
-      background: white;
-    }
-    #patient {
-      &:hover {
-        transition: all 0.3s ease-in-out;
-        padding: 1.3rem 3rem;
-        border-radius: 3rem;
-        color: #6408bc;
-        background: white;
-      }
-      &:active {
-        padding: 1rem 2.7rem;
-      }
-    }
-    #doctor {
-      &:hover {
-        transition: all 0.3s ease-in-out;
-        padding: 1.3rem 3rem;
-        border-radius: 3rem;
-        color: #6408bc;
-        background: white;
-      }
-      &:active {
-        padding: 1rem 2.7rem;
-      }
-    }
-    .form0 {
-      display: flex;
-
-      .form1,
-      .form2 {
-        display: flex;
-        flex-direction: column;
-        input {
-          background: #e8e8e8;
-          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-          color: black;
-          margin: 1rem;
-          border: none;
-          outline: none;
-          border-radius: 1.5rem;
-          text-align: start;
-          padding: 1.5rem 5rem;
-          font-size: 2rem;
-
-          &:focus {
-            outline: none;
-            border-radius: 1.5rem;
-            border: #6408bc 2px solid;
-          }
-        }
-      }
-    }
-    .last-form2 {
-      width: 60%;
-      display: flex;
-      justify-content: space-evenly;
-      div {
-        text-align: start;
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        flex: 1;
-        a {
-          padding: 0;
-          color: #6408bc;
-          font-size: 2rem;
-        }
-      }
-      .button {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: white;
-        background: #6408bc;
-        padding: 1.5rem 4rem;
-        border-radius: 2.5rem;
-        outline: none;
-        border: none;
-        &:active {
-          transform: scale(0.9);
-          background: #23a6d5;
-        }
-      }
+    &:hover {
+      box-shadow: 7px 9px 15px #8b5cb8, -7px -9px 15px #ffffff;
     }
   }
+  .toggle-button {
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    border-radius: 2rem;
+    outline: none;
+    font-size: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  #top-txt {
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 6rem auto auto auto;
+    color: #6408bc;
+  }
+  .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    top: 35%;
+    position: absolute;
+    width: 50%;
+    transition: 0.5s;
+  }
+  .form-field {
+    width: 40%;
+    padding: 1rem 0;
+    margin: 1rem auto;
+    background: #e8e8e8;
+    text-align: center;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    outline: none;
+    border: none;
+    &:focus {
+      border: 2px solid #7e08ec;
+    }
+  }
+  .radio {
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+  .submit-btn {
+    color: white;
+    width: 85%;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto;
+    background: #6408bc;
+    border: 0;
+    outline: none;
+    border-radius: 3rem;
+    border-radius: 44px;
+    box-shadow: 9px 9px 15px #8b5cb8, -9px -9px 15px #ffffff;
+    &:focus {
+      transform: scale(0.98);
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  #doctor {
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
+
 //Footer Section
 
 footer {
@@ -264,15 +230,23 @@ footer {
 // Animation
 
 .rock {
-  animation: rocket 1.5s ease-in-out infinite alternate;
+  animation: rocket 2s ease-in-out infinite alternate;
 }
 
 @keyframes rocket {
   from {
-    transform: translateY(18%) scale(1);
+    transform: translateY(20%) scale(1);
   }
   to {
-    transform: translateY(-60%) scale(1.4);
+    transform: translateY(-40%) scale(1.3);
+  }
+}
+@keyframes pat {
+  from {
+    transform: translateY(80%);
+  }
+  to {
+    transform: translateY(-30%);
   }
 }
 
@@ -290,7 +264,7 @@ footer {
 
 //media query
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
   html {
     font-size: 62%;
   }
@@ -303,7 +277,7 @@ footer {
   nav .nav-tittle {
     align-items: center;
   }
-  section .box {
+  section .side-box {
     border-radius: 5rem;
 
     height: 60vh;
@@ -316,12 +290,13 @@ footer {
   .rock {
     margin-top: 10rem;
   }
-  section .box .last-form2 {
-    width: 65%;
+
+  section .button-box {
+    width: 60%;
+    margin: 2% auto;
   }
-  section .box .top-bar {
-    display: flex;
-    align-self: center;
+  section .input-group {
+    width: 60%;
   }
 }
 @media screen and (max-width: 655px) {
@@ -338,7 +313,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  section .box {
+  section .side-box {
     border-radius: 5rem;
 
     height: 60vh;
@@ -351,12 +326,13 @@ footer {
   .rock {
     margin-top: 10rem;
   }
-  section .box .last-form2 {
-    width: 75%;
+  section .button-box {
+    width: 60%;
+    margin: 2% auto;
   }
-  section .box .top-bar {
-    display: flex;
-    align-self: center;
+
+  section .input-group {
+    width: 75%;
   }
 }
 @media screen and (max-height: 700px) {
@@ -372,7 +348,7 @@ footer {
   nav .nav-tittle {
     align-items: center;
   }
-  section .box {
+  section .side-box {
     border-radius: 5rem;
 
     height: 60vh;
@@ -385,11 +361,8 @@ footer {
   .rock {
     margin-top: 10rem;
   }
-  section .box .last-form2 {
+  section .button-box {
     width: 75%;
-  }
-  section .box .top-bar {
-    display: flex;
-    align-self: center;
+    margin: 2% auto;
   }
 }

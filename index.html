@@ -167,7 +167,17 @@
               placeholder="Confirm Password"
               required
             />
-
+            <div class="radio">
+              <div class="dot">
+                <input type="radio" id="male" name="gen" value="male" checked />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gen" value="female" />
+                <label for="female">Female</label>
+              </div>
+              <a class="already" href="/patientlog/index.html"
+                >Already have an account?</a
+              >
+            </div>
             <button type="submit" class="submit-btn">Register</button>
           </form>
           <form id="doctor" class="input-group">

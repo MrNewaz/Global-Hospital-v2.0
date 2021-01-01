@@ -201,7 +201,7 @@ section #top-txt {
   transition: all 0.3s ease-in-out;
   text-align: center;
   font-size: 2.5rem;
-  margin: 3rem auto;
+  margin: 6rem auto auto auto;
   color: #6408bc;
 }
 
@@ -233,6 +233,27 @@ section .form-field {
 
 section .form-field:focus {
   border: 2px solid #7e08ec;
+}
+
+section .radio {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+section .radio .already {
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 section .submit-btn {

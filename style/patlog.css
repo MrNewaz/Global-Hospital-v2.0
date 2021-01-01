@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: linear-gradient(-45deg, #6408bc, #23a6d5);
+  background: linear-gradient(-45deg, #23a6d5, #6408bc, #23a6d5);
   background-size: 400% 400%;
   -webkit-animation: gradient 5s ease infinite;
           animation: gradient 5s ease infinite;
@@ -122,8 +122,8 @@ section {
 
 section .rocket {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 80rem;
-          flex: 1 1 80rem;
+      -ms-flex: 1 1 60rem;
+          flex: 1 1 60rem;
   font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,243 +141,143 @@ section .rocket {
   color: white;
 }
 
-section .box {
+section .side-box {
+  position: relative;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 60rem;
+          flex: 3 1 60rem;
+  background: #edf0f1;
+  height: 60vh;
+  border-top-left-radius: 8rem;
+  border-bottom-left-radius: 8rem;
+  overflow: hidden;
+}
+
+section .button-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 70vh;
-  background-color: white;
-  border-radius: 15rem;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  margin: 2% 2% 2% auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 2.5;
-      -ms-flex: 2.5 1 80rem;
-          flex: 2.5 1 80rem;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-section .box .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section .box .contact div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-item-align: start;
-      align-self: start;
-  text-align: center;
-  color: white;
-  background: #ae64f3;
-  border-radius: 1rem;
-  width: 20%;
-  padding: 4rem 2rem;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-section .box .contact div h2 {
-  margin-bottom: 1rem;
-}
-
-section .box i {
-  font-size: 6rem;
-  color: #6408bc;
-  -webkit-animation: pat 3s ease-in-out infinite alternate;
-          animation: pat 3s ease-in-out infinite alternate;
-}
-
-section .box h4 {
-  font-weight: bold;
-  font-size: 4rem;
-  color: #6408bc;
-}
-
-section .box .top-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  text-align: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 4rem;
-  padding: 2rem 3rem;
-  margin: 2rem;
-  background: #6408bc;
-  color: white;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-section .box .top-bar:hover {
-  background: #23a6d5;
-}
-
-section .box .top-bar:hover #patient {
-  color: #23a6d5;
-}
-
-section .box div {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-}
-
-section .box a {
-  font-weight: bold;
-  text-align: center;
-  font-size: 2rem;
-  color: white;
-  padding: 0rem 2rem;
-}
-
-section .box #patient {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  padding: 1.3rem 3rem;
-  border-radius: 3rem;
-  color: #6408bc;
-  background: white;
-}
-
-section .box #doctor:hover {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  padding: 1.3rem 3rem;
-  border-radius: 3rem;
-  color: #6408bc;
-  background: white;
-}
-
-section .box #doctor:active {
-  padding: 1rem 2.7rem;
-}
-
-section .box #recep:hover {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  padding: 1.3rem 3rem;
-  border-radius: 3rem;
-  color: #6408bc;
-  background: white;
-}
-
-section .box #recep:active {
-  padding: 1rem 2.7rem;
-}
-
-section .box .form0 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-section .box .form0 .form1,
-section .box .form0 .form2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-section .box .form0 .form1 input,
-section .box .form0 .form2 input {
+  position: relative;
   background: #e8e8e8;
   -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: black;
-  margin: 1rem;
-  border: none;
-  outline: none;
-  border-radius: 1.5rem;
-  text-align: start;
-  padding: 1.5rem 5rem;
-  font-size: 2rem;
+  border-radius: 3rem;
+  text-align: center;
 }
 
-section .box .form0 .form1 input:focus,
-section .box .form0 .form2 input:focus {
-  outline: none;
-  border-radius: 1.5rem;
-  border: #6408bc 2px solid;
+section .button-box .pato {
+  color: white;
+  background: #6408bc;
 }
 
-section .box .last-form2 {
-  width: 60%;
+section .button-box:hover {
+  -webkit-box-shadow: 7px 9px 15px #8b5cb8, -7px -9px 15px #ffffff;
+          box-shadow: 7px 9px 15px #8b5cb8, -7px -9px 15px #ffffff;
+}
+
+section .toggle-button {
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  border-radius: 2rem;
+  outline: none;
+  font-size: 1.5rem;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section #top-txt {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 6rem auto auto auto;
+  color: #6408bc;
+}
+
+section .input-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  top: 35%;
+  position: absolute;
+  width: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-section .box .last-form2 div {
-  text-align: start;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-section .box .last-form2 div a {
-  padding: 0;
-  color: #6408bc;
-  font-size: 2rem;
-}
-
-section .box .last-form2 .button {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: white;
-  background: #6408bc;
-  padding: 1.5rem 4rem;
-  border-radius: 2.5rem;
+section .form-field {
+  width: 40%;
+  padding: 1rem 0;
+  margin: 1rem auto;
+  background: #e8e8e8;
+  text-align: center;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
   outline: none;
   border: none;
 }
 
-section .box .last-form2 .button:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  background: #23a6d5;
+section .form-field:focus {
+  border: 2px solid #7e08ec;
+}
+
+section .radio {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .submit-btn {
+  color: white;
+  width: 85%;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto;
+  background: #6408bc;
+  border: 0;
+  outline: none;
+  border-radius: 3rem;
+  border-radius: 44px;
+  -webkit-box-shadow: 9px 9px 15px #8b5cb8, -9px -9px 15px #ffffff;
+          box-shadow: 9px 9px 15px #8b5cb8, -9px -9px 15px #ffffff;
+}
+
+section .submit-btn:focus {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section #doctor {
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 footer {
@@ -507,7 +407,7 @@ footer div ul i {
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
   html {
     font-size: 62%;
   }
@@ -522,7 +422,7 @@ footer div ul i {
         -ms-flex-align: center;
             align-items: center;
   }
-  section .box {
+  section .side-box {
     border-radius: 5rem;
     height: 60vh;
     font-size: 80%;
@@ -536,15 +436,12 @@ footer div ul i {
   .rock {
     margin-top: 10rem;
   }
-  section .box .last-form2 {
-    width: 65%;
+  section .button-box {
+    width: 60%;
+    margin: 2% auto;
   }
-  section .box .top-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
+  section .input-group {
+    width: 60%;
   }
 }
 
@@ -566,7 +463,7 @@ footer div ul i {
         -ms-flex-align: center;
             align-items: center;
   }
-  section .box {
+  section .side-box {
     border-radius: 5rem;
     height: 60vh;
     font-size: 80%;
@@ -580,15 +477,12 @@ footer div ul i {
   .rock {
     margin-top: 10rem;
   }
-  section .box .last-form2 {
-    width: 75%;
+  section .button-box {
+    width: 60%;
+    margin: 2% auto;
   }
-  section .box .top-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
+  section .input-group {
+    width: 75%;
   }
 }
 
@@ -607,7 +501,7 @@ footer div ul i {
         -ms-flex-align: center;
             align-items: center;
   }
-  section .box {
+  section .side-box {
     border-radius: 5rem;
     height: 60vh;
     font-size: 80%;
@@ -621,15 +515,9 @@ footer div ul i {
   .rock {
     margin-top: 10rem;
   }
-  section .box .last-form2 {
+  section .button-box {
     width: 75%;
-  }
-  section .box .top-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
+    margin: 2% auto;
   }
 }
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=patlog.css.map */

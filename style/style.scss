@@ -134,7 +134,7 @@ section {
     transition: all 0.3s ease-in-out;
     text-align: center;
     font-size: 2.5rem;
-    margin: 3rem auto;
+    margin: 6rem auto auto auto;
     color: #6408bc;
   }
   .input-group {
@@ -157,6 +157,20 @@ section {
     border: none;
     &:focus {
       border: 2px solid #7e08ec;
+    }
+  }
+  .radio {
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+
+    align-items: flex-end;
+    .already {
+      font-size: 1.6rem;
+      font-weight: 600;
     }
   }
   .submit-btn {
